@@ -1,3 +1,4 @@
+import { Post } from './posts/post.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,12 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-
-  storedPosts=[];
-
-  onPostAdded(post: { title: string, content: string })
-  {
-   this.storedPosts.push(post);
-  }
-
 }
